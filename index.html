@@ -33,7 +33,7 @@
 
   <body>
 
-    <div class="site-wrapper">
+    <div class="site-wrapper Background">
 
       <div class="site-wrapper-inner">
 
@@ -41,7 +41,7 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Pranav Jain</h3>
+              <h3 class="masthead-brand navHeading">Pranav Jain</h3>
               <nav>
                 <ul class="nav masthead-nav">
                   <li class="active" id="home"><a href="#">Home</a></li>
@@ -116,17 +116,9 @@
             headingIndex = 0;
           }
       }
-      function prepareNightMode(){
-          if(document.getElementById("nightMode").checked){
-            document.body.style.backgroundColor = "gray";
-          }else{
-            document.body.style.backgroundColor = "white";
-          }
-
-      }
+      
       window.onload = function(){
         setInterval(changeTheHeading,2500);
-        setInterval(prepareNightMode,50);
       }
 
     </script>
