@@ -53,7 +53,7 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
+            <h1 class="cover-heading" id="mainHeading">Hey There!</h1>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default">Learn more</a>
@@ -108,6 +108,29 @@
 
         contact.className += "active";    
       };
+
+      var currentHeading = document.getElementById("mainHeading");
+      var headings = ["Hey There!", "What's Going On?", "Have a Great Day!", "Thanks For Visiting"];
+      var headingIndex = 1;
+      function changeTheHeading(){
+          currentHeading.innerHTML = headings[headingIndex];
+          headingIndex++;
+          if(headingIndex >= headings.length){
+            headingIndex = 0;
+          }
+      }
+      function prepareNightMode(){
+          if(document.getElementById("nightMode").checked){
+            document.body.style.backgroundColor = "gray";
+          }else{
+            document.body.style.backgroundColor = "white";
+          }
+
+      }
+      window.onload = function(){
+        setInterval(changeTheHeading,2500);
+        setInterval(prepareNightMode,50);
+      }
 
     </script>
 
