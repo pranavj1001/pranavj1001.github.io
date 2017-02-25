@@ -41,11 +41,11 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">Pranav Jain</h3>
               <nav>
                 <ul class="nav masthead-nav">
                   <li class="active" id="home"><a href="#">Home</a></li>
-                  <li id="features"><a href="#">Features</a></li>
+                  <li id="projects"><a href="#">Projects</a></li>
                   <li id="contact"><a href="#">Contact</a></li>
                 </ul>
               </nav>
@@ -62,7 +62,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Site Designed and maintained by <a href="https://github.com/pranavj1001" target="_blank">&copy; Pranav Jain</a>.</p>
             </div>
           </div>
 
@@ -82,28 +82,28 @@
     <script type="text/javascript">
       
       var home  = document.getElementById("home");
-      var features = document.getElementById("features");
+      var projects = document.getElementById("projects");
       var contact = document.getElementById("contact");
 
       home.onclick = function(){
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        features.className = features.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         home.className += "active";    
       };
 
-      features.onclick = function(){
+      projects.onclick = function(){
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        features.className = features.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-        features.className += "active";    
+        projects.className += "active";    
       };
 
       contact.onclick = function(){
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        features.className = features.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         contact.className += "active";    
