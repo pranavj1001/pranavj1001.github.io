@@ -30,10 +30,9 @@ a, u {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
+
 body {
-  color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   overflow-x: hidden;
@@ -41,6 +40,7 @@ body {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  color: #fff;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -49,9 +49,9 @@ body {
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   background: url("../img/background.jpg");
   background-size: cover;
-  /*background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -150,6 +150,7 @@ body {
   .mastfoot {
     position: fixed;
     bottom: 0;
+    color: #fff;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -182,4 +183,15 @@ body {
 .post{
   margin-top: 40px;
   font-weight: 200;
+}
+
+.afterFirstPage{
+  margin-top: 50px;
+}
+
+.aboutMe{
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 25px;
+  margin-top: 50px;
 }

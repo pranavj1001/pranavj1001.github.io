@@ -19,8 +19,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/thisSite.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -48,6 +48,7 @@
                 <ul class="nav masthead-nav">
                   <li class="active" id="home"><a href="#">Home</a></li>
                   <li id="projects"><a href="#">Projects</a></li>
+                  <li id="resume"><a href="#">Resume</a></li>
                   <li id="contact"><a href="#">Contact</a></li>
                 </ul>
               </nav>
@@ -55,9 +56,9 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading" id="mainHeading">Hey There!</h1>
+            <h1 class="cover-heading" id="mainHeading">Hey There, Sup?</h1>
             <h2 class="post">Web, Ionic Developer | Vector Art Creator | Computer Science Student</h2>
-            <p class="lead introParagraph">I have deep interest in traveling and coding. I'm learning Android programming, Photoshop and many new things everyday. I'm adventurous (have scaled few peaks, parasailing, trekking) and like to go to the gym. I'm a technophile and a mouse potato. And yeah I'm a gamer too!.</p>
+            <p class="lead introParagraph">My name is Pranav Jain. This is my site. It contains information about me. You can view the projects that I've made or have worked on so far. Also, I'll be posting here many cool things.<br>You are invited to come, share, gain knowledge and ideas.</p>
           </div>
 
           <div class="mastfoot">
@@ -72,6 +73,13 @@
 
     </div>
 
+    <div class="container afterFirstPage">
+      <div class="aboutME">
+        <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+          .....I have deep interest in travelling and coding. I'm learning Android programming,photoshop and many new things everyday. I'm adventurous (have scaled few peaks, parasailing, trekking) and like to go to the gym. I'm a technophile and a mouse potato. And yeah I'm a gamer too!
+         </div>
+    </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -84,11 +92,13 @@
       var home  = document.getElementById("home");
       var projects = document.getElementById("projects");
       var contact = document.getElementById("contact");
+      var resume = document.getElementById("resume");
 
       home.onclick = function(){
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         home.className += "active";    
       };
@@ -97,6 +107,7 @@
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         projects.className += "active";    
       };
@@ -105,12 +116,22 @@
         home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         contact.className += "active";    
       };
 
+      resume.onclick = function(){
+        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+        resume.className += "active";    
+      };
+
       var currentHeading = document.getElementById("mainHeading");
-      var headings = ["Hey There!", "What's Going On?", "Have a Great Day!", "Thanks For Visiting"];
+      var headings = ["Hey there, Sup?", "Have a Great Day!", "Thanks For Visiting"];
       var headingIndex = 1;
       var check = 0;
       function changeTheHeading(){
