@@ -34,7 +34,7 @@ body {
 
 body {
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
   overflow-x: hidden;
 }
 
@@ -201,22 +201,31 @@ body {
 
 /*Recent-Works*/
 #recent-works .col-xs-12.col-sm-4.col-md-3{
-  padding:0;
+  padding: 10px;
 }
 #recent-works{
   padding-bottom:70px;
 }
 .recent-work-wrap{
   position:relative;
+  -webkit-box-shadow: 8px 8px 15px -6px #999;
+  -moz-box-shadow: 8px 8px 15px -6px #999;
+  box-shadow: 8px 8px 15px -6px #999;
+}
+.recent-work-wrap:hover, .recent-work-wrap:focus{
+  position:relative;
+  -webkit-box-shadow: 0px 0px 0px 0px #999;
+  -moz-box-shadow: 0px 0px 0px 0px #999;
+  box-shadow: 0px 0px 0px 0px #999;
 }
 .col-xs-12{
-  padding: 0;
+  padding: 10px;
 }
 .col-sm-4{
-  padding: 0;
+  padding: 10px;
 }
 .col-md-3{
-  padding: 0;
+  padding: 10px;
 }
 .recentWorksHeading{
   text-align: center;
