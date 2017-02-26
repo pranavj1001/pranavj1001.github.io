@@ -188,7 +188,28 @@ body {
   font-weight: 200;
 }
 
-.afterFirstPage{
+.afterLeaves{
+  margin-top: 50px;
+}
+
+.imgCircle{
+  border-radius: 50%;
+  height: 300px;
+  -webkit-box-shadow: 8px 8px 15px -6px #999;
+  -moz-box-shadow: 8px 8px 15px -6px #999;
+  box-shadow: 8px 8px 15px -6px #999;
+}
+
+.imgCircle:hover, .imgCircle:focus{
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  border-radius: 30%;
+}
+
+.afterdp{
   margin-top: 50px;
 }
 
