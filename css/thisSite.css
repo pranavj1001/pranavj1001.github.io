@@ -248,7 +248,7 @@ body {
 .col-md-3{
   padding: 10px;
 }
-.recentWorksHeading{
+.recentWorksHeading, .gameContainer{
   text-align: center;
 }
 .recent-work-wrap img{
@@ -303,5 +303,9 @@ body {
   opacity:1;
 }
 #recentWorks{
+  margin-top: 50px;
+}
+
+.gameContainer{
   margin-top: 50px;
 }
