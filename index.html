@@ -66,7 +66,7 @@
             <div class="inner navLike">
               <h3 class="masthead-brand navHeading">Pranav Jain</h3>
               <nav>
-                <ul class="nav masthead-nav">
+                <ul class="nav masthead-nav customNavItems">
                   <li class="active" id="home"><a class="headerTop" href="#">Home</a></li>
                   <li id="projects"><a href="#">Projects</a></li>
                   <li id="resume"><a href="#">Resume</a></li>
@@ -349,7 +349,7 @@
           $(window).scroll(function() { 
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
-              $(".headerTop").css('background-color', 'aqua');
+              $(".headerTop").css('background-color', 'darkseagreen');
             }else if(scroll_start < offset.top){
               $(".headerTop").css('background-color', 'transparent');
             }
