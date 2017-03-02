@@ -309,3 +309,19 @@ body {
 .gameContainer{
   margin-top: 50px;
 }
+
+.masthead{
+  width: 100%;
+}
+
+.sameLine{
+  display: inline-block;
+}
+
+.navHeading{
+  margin-top: -10px;
+}
+
+.headerTop{
+  z-index: 5;
+}

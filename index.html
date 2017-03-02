@@ -36,18 +36,38 @@
 
   <body>
 
+    <!-- <div class="navbar navbar-inverse">
+      <div class="fluid container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+          <!-- <a class="navbar-brand" href="#" style="float: left;">Pranav Jain</a>
+        </div>
+        <div id="navbar" class="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutME" style="float: inline-block;">More About Me</a></li>
+            <li><a href="#topics" style="float: inline-block;">Topics</a></li>
+            <li><a href="#" style="float: inline-block;">Contact Me</a></li>
+          </ul>
+        </div>/.nav-collapse -->
+      <!-- </div>
+    </div> -->
+
+
     <div class="site-wrapper Background">
 
       <div class="site-wrapper-inner">
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
+          <div class="masthead clearfix headerTop">
             <div class="inner navLike">
               <h3 class="masthead-brand navHeading">Pranav Jain</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active" id="home"><a href="#">Home</a></li>
+                  <li class="active" id="home"><a class="headerTop" href="#">Home</a></li>
                   <li id="projects"><a href="#">Projects</a></li>
                   <li id="resume"><a href="#">Resume</a></li>
                   <li id="contact"><a href="#">Contact</a></li>
@@ -55,6 +75,8 @@
               </nav>
             </div>
           </div>
+
+        <div class="cover-container">
 
           <div class="inner cover">
             <h1 class="cover-heading" id="mainHeading" data-aos="fade-right">Hey There!</h1>
@@ -83,7 +105,7 @@
     <div class="container afterdp">
       <div class="aboutME">
         <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-          .....I have deep interest in travelling and coding. I'm learning Android programming,photoshop and many new things everyday. I'm adventurous (have scaled few peaks, parasailing, trekking) and like to go to the gym. I'm a technophile and a mouse potato. And yeah I'm a gamer too!
+          <p>.....I have deep interest in travelling and coding. I'm learning Android programming,photoshop and many new things everyday. I'm adventurous (have scaled few peaks, parasailing, trekking) and like to go to the gym. I'm a technophile and a mouse potato. And yeah I'm a gamer too!</p>
          </div>
     </div>
 
@@ -247,9 +269,10 @@
           <h2>Wanna play one of my game?</h2>
           <p>Just Tap on the canvas to get started.</p>
           <a href="#" type="button" class="btn btn-primary" id="playGame">Play Game</a>
-
         </div>
-      </div> 
+      </div>
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -275,7 +298,7 @@
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-        home.className += "active";    
+        home.className += " active";    
       };
 
       projects.onclick = function(){
@@ -284,7 +307,7 @@
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-        projects.className += "active";    
+        projects.className += " active";    
       };
 
       contact.onclick = function(){
@@ -293,7 +316,7 @@
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-        contact.className += "active";    
+        contact.className += " active";    
       };
 
       resume.onclick = function(){
@@ -302,11 +325,11 @@
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-        resume.className += "active";    
+        resume.className += " active";    
       };
 
       var currentHeading = document.getElementById("mainHeading");
-      var headings = ["Hey there!", "Have a Great Day"];
+      var headings = ["Hey there!", "I'm Pranav"];
       var headingIndex = 1;
       var check = 0;
       function changeTheHeading(){
@@ -316,8 +339,23 @@
             headingIndex = 0;
           }
       }
-      
+
       window.onload = function(){
+
+        var scroll_start = 0;
+        var startchange = $('.afterLeaves');
+        var offset = startchange.offset();
+        if (startchange.length){
+          $(window).scroll(function() { 
+            scroll_start = $(this).scrollTop();
+            if(scroll_start > offset.top) {
+              $(".headerTop").css('background-color', 'aqua');
+            }else if(scroll_start < offset.top){
+              $(".headerTop").css('background-color', 'transparent');
+            }
+          });
+        }
+
         setInterval(function(){
           currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInLeft(?!\S)/g , '' );
           currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInRight(?!\S)/g , '' );
