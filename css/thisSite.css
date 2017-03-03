@@ -342,18 +342,32 @@ body {
 }
 
 .navShadow{
-  -webkit-box-shadow: 8px 8px 15px -6px gray;
-  -moz-box-shadow: 8px 8px 15px -6px gray;
-  box-shadow: 8px 8px 15px -6px gray;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 
 footer{
   background-color: darkseagreen;
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 50px;
   position:relative;
   color: white;
   margin-top: 50px;
+}
+
+footer:after{
+  content:''; /* Required to display content */
+  position: absolute; /* Sets the position absolute to the top div */
+  top: 0; 
+  left: 50%;
+  margin-left: -50px; /* Set margin equal to border px */
+  width: 0;
+  z-index:1;
+  height: 0;
+  border-top: solid 50px #fff; /* Creates the notch */
+  border-left: solid 50px transparent; /* Creates triangle effect */
+  border-right: solid 50px transparent; /* Creates triangle effect */
 }
 
 /*.footer-outer{ 
@@ -439,11 +453,26 @@ footer{
   height: 400px;
   color: white;
   padding: 100px;
-  -webkit-box-shadow: 8px 8px 15px -6px gray;
-  -moz-box-shadow: 8px 8px 15px -6px gray;
-  box-shadow: 8px 8px 15px -6px gray;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 
-.gameContainer:hover{
+.gameContainer:hover, .appContainer:hover{
   opacity: 0.95;
+}
+
+.appContainer{
+  background-image: url('../img/appContainer.png');
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: gray;
+  padding: 100px;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
