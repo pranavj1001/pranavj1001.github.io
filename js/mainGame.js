@@ -1,7 +1,6 @@
 //variables of the canvas
 var canvas;
 var canvasContext;
-var gameButton = document.getElementById('playGame');
 
 //variables of the ball
 var ballX = 50;
@@ -41,7 +40,7 @@ function handleMouseClick(evt){
 	}
 }
 
-gameButton.onclick = function() {
+window.onload = function() {
 	canvas = document.getElementById('gameCanvas');
 	canvasContext = canvas.getContext('2d');
 
@@ -61,9 +60,10 @@ gameButton.onclick = function() {
 
 function ballReset(){
 	if(player1Score >= WINNING_SCORE || player2Score >= WINNING_SCORE){
-		player1Score = 0;			//Reseting Scores if Winning Condition is achieved
-		player2Score = 0;
+		// player1Score = 0;			//Reseting Scores if Winning Condition is achieved
+		// player2Score = 0;
 		showingWinScreen = true;
+		drawEverything();
 	}
 	ballspeedX = -ballspeedX;
 	ballX = canvas.width/2;
