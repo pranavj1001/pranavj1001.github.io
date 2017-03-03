@@ -348,7 +348,7 @@ body {
 }
 
 footer{
-  background-color: darkseagreen;
+  background-color: cadetblue;
   padding-top: 100px;
   padding-bottom: 50px;
   position:relative;
@@ -470,7 +470,7 @@ footer:after{
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
-  color: gray;
+  color: white;
   padding: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
