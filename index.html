@@ -58,6 +58,7 @@
                 <ul class="nav masthead-nav customNavItems">
                   <li class="active" id="home"><a href="#">Home</a></li>
                   <li id="projects"><a href="#">Projects</a></li>
+                  <li id="blogs"><a href="#">Blogs</a></li>
                   <li id="resume"><a href="#">Resume</a></li>
                   <li id="contact"><a href="#">Contact</a></li>
                 </ul>
@@ -255,7 +256,7 @@
 
       <div class="fluid-container">
         <div class="gameContainer">
-          <h2 data-aos="fade-up">Wanna play one of my game?</h2>
+          <h2 data-aos="fade-up">Wanna play my games?</h2>
           <p data-aos="fade-up">Just Tap on the button to get started.</p>
           <a href="game.html" type="button" class="btn btn-primary" id="playGame" data-aos="fade-up">Play Game</a>
         </div>
@@ -269,14 +270,63 @@
         </div>
       </div>
 
-      <footer>
-        <div class="container">
-          <div class="fluid-container">
-            <p style="display:inline-block; float: left;">&copy;Pranav Jain</p>
-            <p style="display:inline-block; float: right;"><input type="checkbox" id="nightMode"> Night Mode (beta)</p>
-         </div>
+      <div class="fluid-container">
+        <div class="designContainer">
+          <h2 data-aos="fade-up">Here you can find some of the designs that I have created.</h2>
+          <p data-aos="fade-up">Tap the button to view them.</p>
+          <a href="#" type="button" class="btn btn-primary" id="tryApps" data-aos="fade-up">View Designs</a>
         </div>
-      </footer>
+      </div>
+
+      <footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>Pranav Jain</h3>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Projects</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Resume</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-name">&copy; Pranav Jain, 2017</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Eating at Pizzaria</span> Mumbai, India</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>Send me an email to request for my number</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:pranavj1001@gmail.com">pranavj1001@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-about">
+          <span>About Me</span>
+          You can find more about me at social platforms. To do so click on links given below.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -292,6 +342,7 @@
       var projects = document.getElementById("projects");
       var contact = document.getElementById("contact");
       var resume = document.getElementById("resume");
+      var blogs = document.getElementById("blogs");
       AOS.init();
 
       home.onclick = function(){
@@ -299,6 +350,7 @@
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         home.className += " active";    
       };
@@ -308,6 +360,7 @@
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         projects.className += " active";    
       };
@@ -317,6 +370,7 @@
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         contact.className += " active";    
       };
@@ -326,8 +380,19 @@
         projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
         resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
         resume.className += " active";    
+      };
+
+      blogs.onclick = function(){
+        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+        blogs.className += " active";    
       };
 
       var currentHeading = document.getElementById("mainHeading");
