@@ -332,10 +332,13 @@ body {
 }
 
 .loader {
-   position: absolute; 
-   width: 100%; 
-   height: 100%; 
-   background: url('img/loading.gif') no-repeat center center;
+   position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/loading.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
 .navShadow{
@@ -351,4 +354,23 @@ footer{
   position:relative;
   color: white;
   margin-top: 50px;
+}
+
+.gameContainer{
+  background-image: url('../img/game.jpg');
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: white;
+  padding: 100px;
+  -webkit-box-shadow: 8px 8px 15px -6px gray;
+  -moz-box-shadow: 8px 8px 15px -6px gray;
+  box-shadow: 8px 8px 15px -6px gray;
+}
+
+.gameContainer:hover{
+  opacity: 0.95;
 }
