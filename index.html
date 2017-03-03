@@ -271,9 +271,10 @@
 
       <footer>
         <div class="container">
-          <div class="container">
-            <p>&copy;Pranav Jain</p>
-          </div>
+          <div class="fluid-container">
+            <p style="display:inline-block; float: left;">&copy;Pranav Jain</p>
+            <p style="display:inline-block; float: right;"><input type="checkbox" id="nightMode">NightMode</p>
+         </div>
         </div>
       </footer>
 
@@ -333,11 +334,20 @@
       var headings = ["Hey there!", "I'm Pranav"];
       var headingIndex = 1;
       var check = 0;
+
       function changeTheHeading(){
           currentHeading.innerHTML = headings[headingIndex];
           headingIndex++;
           if(headingIndex >= headings.length){
             headingIndex = 0;
+          }
+      }
+
+      function prepareNightMode(){
+          if(document.getElementById("nightMode").checked){
+            document.body.style.backgroundColor = "gray";
+          }else{
+            document.body.style.backgroundColor = "white";
           }
       }
 
@@ -373,6 +383,8 @@
             currentHeading.className += " animated fadeInRight";
           }
         },2000);
+
+        setInterval(prepareNightMode,50);
 
       }
 
