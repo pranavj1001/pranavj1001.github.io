@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pranav Jain</title>
+
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link href="css/thisSite.css" rel="stylesheet"> -->
+    <link href="css/gameStyle.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="masthead clearfix headerTop">
+        <div class="inner navLike">
+            <h3 class="masthead-brand navHeading">Pranav Jain</h3>
+        	<nav>
+                <ul class="nav masthead-nav customNavItems">
+                  <li class="active" id="home"><a class="headerTop" href="#">Home</a></li>
+                  <li id="projects"><a href="#">Projects</a></li>
+                  <li id="resume"><a href="#">Resume</a></li>
+                  <li id="contact"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+	<div class="container gameButton">
+		<button class="btn btn-primary" id="playGame">Start the Game</button>
+	</div>
+
+	<div class="container gameCanvasContainer">
+		<canvas id="gameCanvas" height="360" width="640"></canvas>
+	</div>
+
+    <script type="text/javascript" src="mainGame.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- <script>
+	  function resize(){    
+	    $("#gameCanvas").outerHeight($(window).height()-$("#gameCanvas").offset().top- Math.abs($("#gameCanvas").outerHeight(true) - $("#gameCanvas").outerHeight()));
+	  }
+	  $(document).ready(function(){
+	    resize();
+	    $(window).on("resize", function(){                      
+	        resize();
+	    });
+	  });
+	</script> -->
+
+</body>
+</html>
