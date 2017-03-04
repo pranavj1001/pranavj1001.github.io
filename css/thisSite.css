@@ -306,9 +306,9 @@ body {
   margin-top: 50px;
 }
 
-.gameContainer, .appContainer, .designContainer{
+/*.gameContainer, .appContainer, .designContainer{
   margin-top: 50px;
-}
+}*/
 
 .masthead{
   width: 100%;
@@ -574,7 +574,7 @@ footer:after{
 }
 
 .designContainer{
-  background-image: url('../img/design.jpg');
+  background-image: url('../img/Batarang.jpg');
   width: 100%;
   background-size: cover;
   background-attachment: fixed;

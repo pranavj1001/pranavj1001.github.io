@@ -53,7 +53,7 @@
 
           <div class="masthead clearfix headerTop">
             <div class="inner navLike">
-              <h3 class="masthead-brand navHeading">Pranav Jain</h3>
+              <h3 class="masthead-brand navHeading" id="nameHeading"> Pranav Jain </h3>
               <nav>
                 <ul class="nav masthead-nav customNavItems">
                   <li class="active" id="home"><a href="#">Home</a></li>
@@ -69,7 +69,7 @@
         <div class="cover-container">
 
           <div class="inner cover">
-            <h1 class="cover-heading" id="mainHeading" data-aos="fade-right">Hey There!</h1>
+            <h1 class="cover-heading" id="mainHeading" data-aos="fade-right">Hey There</h1>
             <h2 class="post">Web, Ionic App Developer | Vector Art Creator | Computer Science Student</h2>
             <p class="lead introParagraph">My name is Pranav Jain. This is my site. It contains information about me. You can view the projects that I've made or have worked on so far. Also, I'll be posting here many cool things.<br>You are invited to come, share, gain knowledge and ideas.</p>
           </div>
@@ -272,7 +272,7 @@
 
       <div class="fluid-container">
         <div class="designContainer">
-          <h2 data-aos="fade-up">Here you can find some of the designs that I have created.</h2>
+          <h2 data-aos="fade-up">Check out some of my designs.</h2>
           <p data-aos="fade-up">Tap the button to view them.</p>
           <a href="#" type="button" class="btn btn-primary" id="tryApps" data-aos="fade-up">View Designs</a>
         </div>
@@ -400,6 +400,7 @@
       var headings = ["Hey there!", "I'm Pranav"];
       var headingIndex = 1;
       var check = 0;
+      var nameHeading = document.getElementById("nameHeading");
 
       function changeTheHeading(){
           currentHeading.innerHTML = headings[headingIndex];
@@ -419,6 +420,7 @@
 
       window.onload = function(){
 
+        var count = 0;
         var scroll_start = 0;
         var startchange = $('.afterLeaves');
         var offset = startchange.offset();
@@ -438,17 +440,26 @@
         }
 
         setInterval(function(){
-          currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInLeft(?!\S)/g , '' );
-          currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInRight(?!\S)/g , '' );
-          changeTheHeading();
-          if(check){
-            check = 0;
-            currentHeading.className += " animated fadeInLeft";
+          // currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInLeft(?!\S)/g , '' );
+          // currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInRight(?!\S)/g , '' );
+          // changeTheHeading();
+          // if(check){
+          //   check = 0;
+          //   currentHeading.className += " animated fadeInLeft";
+          // }else{
+          //   check = 1;
+          //   currentHeading.className += " animated fadeInRight";
+          // }
+
+          if(count == 3){
+            currentHeading.innerHTML = "Hey There";
+            count = 0;
           }else{
-            check = 1;
-            currentHeading.className += " animated fadeInRight";
+            currentHeading.innerHTML += ".";
+            count++;
           }
-        },2000);
+
+        },1000);
 
         setInterval(prepareNightMode,50);
 
