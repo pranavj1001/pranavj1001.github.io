@@ -306,9 +306,9 @@ body {
   margin-top: 50px;
 }
 
-/*.gameContainer, .appContainer, .designContainer{
+.gameContainer, .appContainer, .designContainer{
   margin-top: 50px;
-}*/
+}
 
 .masthead{
   width: 100%;
