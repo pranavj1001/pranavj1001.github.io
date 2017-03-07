@@ -51,7 +51,7 @@ body {
   font-size: 85%;
 }
 
-.jsContainer{
+.jsContainer, .androidContainer, .moreContainer{
   margin-top: 50px
 }
 
