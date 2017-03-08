@@ -55,6 +55,20 @@ body {
   font-size: 85%;
 }
 
+.topHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  background: #CC4646;
+}
+
+.topHome .fa-2x {
+  font-size: 20px;
+  color:#fff;
+  margin: 4px;
+}
+
 .jsContainer, .androidContainer, .moreContainer{
   margin-top: 50px
 }
