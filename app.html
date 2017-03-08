@@ -351,7 +351,17 @@
                 <p class="footer-name">&copy; Pranav Jain, 2017</p><br>
             </div>
         </footer>
+    
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
+    <script type="text/javascript">
+      var jQuery_1_6_1 = $.noConflict(true);
+
+      jQuery_1_6_1(".topHome").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
