@@ -343,6 +343,20 @@ body {
   box-shadow: 0 8px 6px -6px #999;
 }
 
+.topHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  background: #CC4646;
+}
+
+.topHome .fa-2x {
+  font-size: 20px;
+  color:#fff;
+  margin: 4px;
+}
+
 footer{
   background-color: #222 !important; 
   padding-top: 150px;
