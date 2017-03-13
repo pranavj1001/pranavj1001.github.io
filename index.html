@@ -56,11 +56,11 @@
               <h3 class="masthead-brand navHeading" id="nameHeading"> Pranav Jain </h3>
               <nav>
                 <ul class="nav masthead-nav customNavItems">
-                  <li class="active" id="home"><a href="#">Home</a></li>
-                  <li id="projects"><a href="#">Projects</a></li>
+                  <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
+                  <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
                   <li id="blogs"><a href="#">Blogs</a></li>
                   <li id="resume"><a href="#">Resume</a></li>
-                  <li id="contact"><a href="#">Contact</a></li>
+                  <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -318,7 +318,7 @@
         <p class="footer-name"><input type="checkbox" id="nightMode"> NightMode (beta)</p>
       </div>
 
-      <div class="footer-center">
+      <div class="footer-center" id="footerDistributed">
         <div>
           <i class="fa fa-map-marker"></i>
           <p><span>Eating at a Pizzaria</span> Mumbai, India</p>
@@ -368,6 +368,22 @@
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
       });
+
+      jQuery_1_6_1(".contactDetails").click(function () {
+        $("html, body").animate({ scrollTop: $("#footerDistributed").offset().top }, "slow");
+        return false;
+      });
+
+      jQuery_1_6_1(".homeDetails").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+
+      jQuery_1_6_1(".projectDetails").click(function () {
+        $("html, body").animate({ scrollTop: $("#recentWorks").offset().top }, "slow");
+        return false;
+      });
+
     </script>
 
     <script type="text/javascript">
