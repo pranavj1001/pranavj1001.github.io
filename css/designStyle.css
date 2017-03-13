@@ -167,6 +167,9 @@ body {
 #recentWorks{
   margin-top: 50px;
 }
+.recentWorksHeading h2{
+  text-align: left;
+}
 
 
 .footer-distributed{
