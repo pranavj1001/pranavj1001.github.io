@@ -53,20 +53,16 @@ Pranav Jain</a>
       <div class="container">
         <h1 class="jumbotron-heading">Apps!</h1>
         <p class="lead">Hey there, this page contains the details of the apps that I've developed. I'll updating and adding more apps as I develop new apps. So stay tuned and keep rocking.</p>
-<!--         <p>
-          <a href="#" class="btn btn-primary">Main call to action</a>
-          <a href="#" class="btn btn-secondary">Secondary action</a>
-        </p> -->
       </div>
     </section>
     
     <div class="container ionicContainer">
-        <h1 class="heading">Ionic Applications</h1>
+        <h1 class="heading" data-aos="fade-right">Ionic Applications</h1>
         <hr>
-        <p class="headingText">Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease. The major reason why I like Ionic is that it uses AngularJS and other web languages. Also, the code written for android devices also works for iOS devices.</p>
+        <p class="headingText" data-aos="fade-up">Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease. The major reason why I like Ionic is that it uses AngularJS and other web languages. Also, the code written for android devices also works for iOS devices.</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
           <a target="_blank" href="https://github.com/pranavj1001/IonicApps/tree/master/GeoWeather" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
@@ -127,13 +123,13 @@ Pranav Jain</a>
         </div>
     </div>
 
-    <div class="container androidContainer">
-        <h1 class="heading">Android Apps</h1>
+    <div class="container androidContainer" data-aos="fade-right">
+        <h1 class="heading" data-aos="fade-up">Android Apps</h1>
         <hr>
         <p class="headingText">Android is the world's most used Mobile OS. One can do a lot a things with it. That's the reason I started developing apps for Android. Fun Fact: Before knowing about Ionic I used to develop Android Apps.</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
           <a target="_blank" href="https://github.com/pranavj1001/FlappyBird" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
@@ -210,13 +206,13 @@ Pranav Jain</a>
         </div>
     </div>
 
-    <div class="container webContainer">
-        <h1 class="heading">Web Applications</h1>
+    <div class="container webContainer" data-aos="fade-right">
+        <h1 class="heading" data-aos="fade-up">Web Applications</h1>
         <hr>
         <p class="headingText">In computing, a web application or web app is a client–server software application in which the client (or user interface) runs in a web browser.</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
           <a target="_blank" href="https://github.com/pranavj1001/TwitterClone" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
@@ -277,13 +273,13 @@ Pranav Jain</a>
         </div>
     </div>
 
-    <div class="container javafxContainer">
-        <h1 class="heading">JavaFX Applications</h1>
+    <div class="container javafxContainer" data-aos="fade-right">
+        <h1 class="heading" data-aos="fade-up">JavaFX Applications</h1>
         <hr>
         <p class="headingText">As we know, JavaFX is a software platform for creating and delivering desktop applications, as well as rich internet applications (RIAs) that can run across a wide variety of devices.</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
           <a target="_blank" href="https://github.com/pranavj1001/JavaFxApplications/tree/master/CalculatorApplication" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
@@ -367,6 +363,7 @@ Pranav Jain</a>
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
+      AOS.init();
       var jQuery_1_6_1 = $.noConflict(true);
 
       jQuery_1_6_1(".topHome").click(function () {

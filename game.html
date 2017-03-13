@@ -51,24 +51,20 @@ Pranav Jain</a>
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1 class="jumbotron-heading">Games!</h1>
-        <p class="lead">Hey there, this page contains the details of the games that I've built. I'll updating and adding more games as I develop new games. So stay tuned and keep rocking.</p>
-<!--         <p>
-          <a href="#" class="btn btn-primary">Main call to action</a>
-          <a href="#" class="btn btn-secondary">Secondary action</a>
-        </p> -->
+        <h1 class="jumbotron-heading" data-aos="fade-down" data-aos="fade-down">Games!</h1>
+        <p class="lead" data-aos="fade-up">Hey there, this page contains the details of the games that I've built. I'll updating and adding more games as I develop new games. So stay tuned and keep rocking.</p>
       </div>
     </section>
     
     <div class="container jsContainer">
-        <h1 class="heading">JavaScript Based Games</h1>
+        <h1 class="heading" data-aos="fade-right">JavaScript Based Games</h1>
         <hr>
-        <p class="headingText">JavaScript is a wonderful language to learn and to use it. I've really had a pleasant experience with language. The copious JS frameworks have never let my curiosity to try new things, go down. Here, you can see I've developed games using pure JS and later on tried my hand with phaser JS (which I'm still learning)</p>
+        <p class="headingText" data-aos="fade-up">JavaScript is a wonderful language to learn and to use it. I've really had a pleasant experience with language. The copious JS frameworks have never let my curiosity to try new things, go down. Here, you can see I've developed games using pure JS and later on tried my hand with phaser JS (which I'm still learning)</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
-          <a target="_blank" href="https://github.com/pranavj1001/JavaScript-Based-Game" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a target="_blank" href="https://github.com/pranavj1001/JavaScript-Based-Game" class="list-group-item list-group-item-action flex-column align-items-start" data-aos="flip-left">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">Tennis Game</h5>
               <small>Pure JS</small>
@@ -95,13 +91,13 @@ Pranav Jain</a>
         </div>
     </div>
 
-    <div class="container androidContainer">
-        <h1 class="heading">Android Games</h1>
+    <div class="container androidContainer" data-aos="fade-right">
+        <h1 class="heading" data-aos="fade-up">Android Games</h1>
         <hr>
         <p class="headingText">Android is the world's most used Mobile OS. One can do a lot a things with it. And since a smartphone is portable which makes Android much more interesting. That's the reason I started developing games for Android. </p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left">
         <div class="list-group">
           <a target="_blank" href="https://github.com/pranavj1001/FlappyBird" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
@@ -146,8 +142,8 @@ Pranav Jain</a>
         </div>
     </div>
 
-    <div class="container moreContainer">
-        <h1 class="heading">Unity, Unreal Games</h1>
+    <div class="container moreContainer" data-aos="fade-right">
+        <h1 class="heading" data-aos="fade-up">Unity, Unreal Games</h1>
         <hr>
         <p class="headingText">I've promised myself to learn developing new games on these Platforms. It's also my New Year Resolution. By the end of the year, You'll probably find here games.</p>
     </div>
@@ -191,6 +187,7 @@ Pranav Jain</a>
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
+      AOS.init();
       var jQuery_1_6_1 = $.noConflict(true);
 
       jQuery_1_6_1(".topHome").click(function () {
