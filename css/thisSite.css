@@ -556,7 +556,8 @@ footer:after{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   color: white;
   padding: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -575,7 +576,8 @@ footer:after{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   color: white;
   padding: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -590,7 +592,8 @@ footer:after{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   color: white;
   padding: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #999;
