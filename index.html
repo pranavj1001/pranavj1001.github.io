@@ -488,7 +488,8 @@
         var scroll_start = 0;
         var startchange = $('.afterLeaves');
         var startSecondChange = $('.gameIntro');
-        var startThirdChange = $('.shortLivedFooter');
+        var startThirdChange = $('.lead');
+        var offset3 = startThirdChange.offset();
         var offset2 = startSecondChange.offset();
         var offset = startchange.offset();
 
@@ -499,8 +500,10 @@
               $(".headerTop").css('background', '#141E30;');
               $(".headerTop").css('background', '-webkit-linear-gradient(to left, #141E30 , #243B55)');
               $(".headerTop").css('background', 'linear-gradient(to left, #141E30 , #243B55)');
+              //$(".shortLivedFooter").hide();
             }else if(scroll_start < offset.top){
               $(".headerTop").css('background', 'transparent');
+              //$(".shortLivedFooter").show();
             }
           });
         }
@@ -515,18 +518,16 @@
           });
         }
 
-        if (startThirdChange.length){
+        if (startSecondChange.length){
           $(window).scroll(function() { 
             scroll_start = $(this).scrollTop();
-            console.log(offset.top);
-            console.log(scroll_start);
-            if(scroll_start > offset.top - 100) {
+            if(scroll_start > offset3.top) {
               $(".shortLivedFooter").hide();
             }else{
               $(".shortLivedFooter").show();
             }
           });
-        }
+        }        
           
         setInterval(function(){
           // currentHeading.className = currentHeading.className.replace( /(?:^|\s)animated fadeInLeft(?!\S)/g , '' );

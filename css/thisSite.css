@@ -192,6 +192,10 @@ body {
   margin-top: 50px;
 }
 
+.afterLeaves, .afterdp, #recentWorks{
+  z-index: 2;
+}
+
 .imgCircle{
   border-radius: 50%;
   height: 300px;
@@ -643,4 +647,8 @@ footer:after{
 
 .game p, .app p, .design p, .aboutME p{
   font-size: 20px;
+}
+
+.shortLivedFooter{
+  z-index: 0;
 }
