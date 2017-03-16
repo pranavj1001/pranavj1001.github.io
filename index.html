@@ -363,101 +363,116 @@
 
     <script type="text/javascript">
       var jQuery_1_6_1 = $.noConflict(true);
-
-      jQuery_1_6_1(".topHome").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-      });
-
-      jQuery_1_6_1(".contactDetails").click(function () {
-        $("html, body").animate({ scrollTop: $("#footerDistributed").offset().top }, "slow");
-        return false;
-      });
-
-      jQuery_1_6_1(".homeDetails").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-      });
-
-      jQuery_1_6_1(".projectDetails").click(function () {
-        $("html, body").animate({ scrollTop: $("#recentWorks").offset().top }, "slow");
-        return false;
-      });
-
-    </script>
-
-    <script type="text/javascript">
-      
       var home  = document.getElementById("home");
       var projects = document.getElementById("projects");
       var contact = document.getElementById("contact");
       var resume = document.getElementById("resume");
       var blogs = document.getElementById("blogs");
+      
       AOS.init();
 
-      home.onclick = function(){
-        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+      var makeActive = {
 
-        home.className += " active";    
+        homeTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          home.className += " active";    
+        },
+
+        projectsTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          projects.className += " active";    
+        },
+
+        contactTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          contact.className += " active";    
+        },
+
+        resumeTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          resume.className += " active";    
+        },
+
+        blogsTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          blogs.className += " active";    
+        }
+
       };
 
-      projects.onclick = function(){
-        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+      jQuery_1_6_1(".topHome").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        makeActive.homeTab();
+        return false;
+      });
 
-        projects.className += " active";    
-      };
+      jQuery_1_6_1(".contactDetails").click(function () {
+        $("html, body").animate({ scrollTop: $("#footerDistributed").offset().top }, "slow");
+        makeActive.contactTab();
+        return false;
+      });
 
-      contact.onclick = function(){
-        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+      jQuery_1_6_1(".homeDetails").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        makeActive.homeTab();
+        return false;
+      });
 
-        contact.className += " active";    
-      };
+      jQuery_1_6_1(".projectDetails").click(function () {
+        $("html, body").animate({ scrollTop: $("#recentWorks").offset().top }, "slow");
+        makeActive.projectsTab();
+        return false;
+      });
 
-      resume.onclick = function(){
-        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+      jQuery_1_6_1(".blogs").click(function () {
+        makeActive.blogsTab();
+      });
 
-        resume.className += " active";    
-      };
+      jQuery_1_6_1(".resume").click(function () {
+        makeActive.resumeTab();
+      });
 
-      blogs.onclick = function(){
-        home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-        blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+      //Below code is currently commented because it is not needed rn
+      //However, earlier this code was not used
+      //This code the whole text of the main Heading
+      // var currentHeading = document.getElementById("mainHeading");
+      // var headings = ["Hey there!", "I'm Pranav"];
+      // var headingIndex = 1;
+      // var check = 0;
+      // var nameHeading = document.getElementById("nameHeading");
 
-        blogs.className += " active";    
-      };
-
-      var currentHeading = document.getElementById("mainHeading");
-      var headings = ["Hey there!", "I'm Pranav"];
-      var headingIndex = 1;
-      var check = 0;
-      var nameHeading = document.getElementById("nameHeading");
-
-      function changeTheHeading(){
-          currentHeading.innerHTML = headings[headingIndex];
-          headingIndex++;
-          if(headingIndex >= headings.length){
-            headingIndex = 0;
-          }
-      }
+      // function changeTheHeading(){
+      //     currentHeading.innerHTML = headings[headingIndex];
+      //     headingIndex++;
+      //     if(headingIndex >= headings.length){
+      //       headingIndex = 0;
+      //     }
+      // }
 
       function prepareNightMode(){
           if(document.getElementById("nightMode").checked){
