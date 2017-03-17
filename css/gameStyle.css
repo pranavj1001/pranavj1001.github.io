@@ -8,7 +8,7 @@ body {
 
 .jumbotron {
   color: white;
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
   background: #141E30; /* fallback for old browsers */
@@ -26,33 +26,11 @@ body {
 
 .jumbotron-heading {
   font-weight: 300;
+  font-size: 90px;
 }
 
 .jumbotron .container {
   max-width: 40rem;
-}
-
-.album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #f7f7f7;
-}
-
-.card {
-  float: left;
-  width: 33.333%;
-  padding: .75rem;
-  margin-bottom: 2rem;
-  border: 0;
-}
-
-.card > img {
-  margin-bottom: .75rem;
-}
-
-.card-text {
-  font-size: 85%;
 }
 
 .topHome {
