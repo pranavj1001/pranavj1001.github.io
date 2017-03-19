@@ -347,6 +347,7 @@ Pranav Jain</a>
                 <a href="index.html">Contact</a>
               </p>
               <p class="footer-name">&copy; Pranav Jain, 2017</p><br>
+              <p class="footer-name"><input type="checkbox" id="nightMode"> NightMode (beta)</p>
             </div>
         </footer>
     
@@ -371,6 +372,17 @@ Pranav Jain</a>
         jQuery_1_6_1("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
       });
+
+      function prepareNightMode(){
+          if(document.getElementById("nightMode").checked){
+            document.body.style.backgroundColor = "gray";
+          }else{
+            document.body.style.backgroundColor = "white";
+          }
+      }
+
+      setInterval(prepareNightMode,50);
+      
     </script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
