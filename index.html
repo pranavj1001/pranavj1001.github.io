@@ -562,7 +562,7 @@
         var offset2 = startSecondChange.offset();
         var offset = startchange.offset();
 
-        if(!(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App")){
+        if(!(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App" WURFL.form_factor == "Tablet")){
           if (startchange.length){
             $(window).scroll(function() { 
               scroll_start = $(this).scrollTop();
