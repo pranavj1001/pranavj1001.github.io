@@ -340,7 +340,7 @@ body {
   top:0;
   left:0;
   z-index:9999;
-  background: url('../img/loading1.gif') 50% 50% no-repeat rgb(249,249,249);
+  background: url('../img/loading2.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
 .navShadow{
