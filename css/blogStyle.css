@@ -24,6 +24,32 @@
   background-repeat: no-repeat;
 }
 
+.blogTitle{
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: 'Bubbler One', sans-serif;
+  font-weight: 600;
+}
+
+.blogText{
+  font-size: 23px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.blogDate{
+  font-size: 15px;
+  color: #555;
+}
+
+.readMore{
+  align-content: right
+  display: block;
+}
+
+.blog{
+  margin-bottom: 50px;
+}
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
