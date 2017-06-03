@@ -324,43 +324,61 @@ Pranav Jain</a>
       });
 
       jQuery_1_6_1(".readMore").click(function(){
-        if(jQuery_1_6_1(this).attr("blogNumber") == 1){
-          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
-            jQuery_1_6_1(".fullBlogText1").show();
-            jQuery_1_6_1(".blogText1").hide();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
-            jQuery_1_6_1(this).html("Read Less");
-          }else{
-            jQuery_1_6_1(".fullBlogText1").hide();
-            jQuery_1_6_1(".blogText1").show();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
-            jQuery_1_6_1(this).html("Read More");
-          }
-        }else if(jQuery_1_6_1(this).attr("blogNumber") == 2){
-          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
-            jQuery_1_6_1(".fullBlogText2").show();
-            jQuery_1_6_1(".blogText2").hide();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
-            jQuery_1_6_1(this).html("Read Less");
-          }else{
-            jQuery_1_6_1(".fullBlogText2").hide();
-            jQuery_1_6_1(".blogText2").show();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
-            jQuery_1_6_1(this).html("Read More");
-          }
-        }else if(jQuery_1_6_1(this).attr("blogNumber") == 3){
-          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
-            jQuery_1_6_1(".fullBlogText3").show();
-            jQuery_1_6_1(".blogText3").hide();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
-            jQuery_1_6_1(this).html("Read Less");
-          }else{
-            jQuery_1_6_1(".fullBlogText3").hide();
-            jQuery_1_6_1(".blogText3").show();
-            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
-            jQuery_1_6_1(this).html("Read More");
-          }
+
+        //new optimized and short code
+        //now no need to update js code if new blogs are added in future
+        var blogNumber = jQuery_1_6_1(this).attr("blogNumber");
+
+        if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+          jQuery_1_6_1(".fullBlogText" + blogNumber).show();
+          jQuery_1_6_1(".blogText" + blogNumber).hide();
+          jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+          jQuery_1_6_1(this).html("Read Less");
+        }else{
+          jQuery_1_6_1(".fullBlogText" + blogNumber).hide();
+          jQuery_1_6_1(".blogText" + blogNumber).show();
+          jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+          jQuery_1_6_1(this).html("Read More");
         }
+
+        //old code, keeping the code just to remember myself the difference between unoptimized lengthy and optimized short code.
+        // if(jQuery_1_6_1(this).attr("blogNumber") == 1){
+        //   if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+        //     jQuery_1_6_1(".fullBlogText1").show();
+        //     jQuery_1_6_1(".blogText1").hide();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+        //     jQuery_1_6_1(this).html("Read Less");
+        //   }else{
+        //     jQuery_1_6_1(".fullBlogText1").hide();
+        //     jQuery_1_6_1(".blogText1").show();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+        //     jQuery_1_6_1(this).html("Read More");
+        //   }
+        // }else if(jQuery_1_6_1(this).attr("blogNumber") == 2){
+        //   if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+        //     jQuery_1_6_1(".fullBlogText2").show();
+        //     jQuery_1_6_1(".blogText2").hide();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+        //     jQuery_1_6_1(this).html("Read Less");
+        //   }else{
+        //     jQuery_1_6_1(".fullBlogText2").hide();
+        //     jQuery_1_6_1(".blogText2").show();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+        //     jQuery_1_6_1(this).html("Read More");
+        //   }
+        // }else if(jQuery_1_6_1(this).attr("blogNumber") == 3){
+        //   if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+        //     jQuery_1_6_1(".fullBlogText3").show();
+        //     jQuery_1_6_1(".blogText3").hide();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+        //     jQuery_1_6_1(this).html("Read Less");
+        //   }else{
+        //     jQuery_1_6_1(".fullBlogText3").hide();
+        //     jQuery_1_6_1(".blogText3").show();
+        //     jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+        //     jQuery_1_6_1(this).html("Read More");
+        //   }
+        // }
       });
 
     </script>
