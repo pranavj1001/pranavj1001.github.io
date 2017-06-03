@@ -303,6 +303,7 @@ Pranav Jain</a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
 
     <script type="text/javascript">
 
@@ -330,28 +331,42 @@ Pranav Jain</a>
         //now no need to update js code if new blogs are added in future
         var blogNumber = jQuery_1_6_1(this).attr("blogNumber");
 
-        if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
-          jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideInLeft");
-          jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeOutRight");
-          jQuery_1_6_1(".fullBlogText" + blogNumber).show();
-          jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
-          jQuery_1_6_1(this).html("Read Less");
-          setTimeout(function(){
-            jQuery_1_6_1(".blogText" + blogNumber).hide();
-            jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideInLeft");
-            jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeOutRight");
-          }, 1000);
+        if(!(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App")){
+          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+            jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideInLeft");
+            jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeOutRight");
+            jQuery_1_6_1(".fullBlogText" + blogNumber).show();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+            jQuery_1_6_1(this).html("Read Less");
+            setTimeout(function(){
+              jQuery_1_6_1(".blogText" + blogNumber).hide();
+              jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideInLeft");
+              jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeOutRight");
+            }, 1000);
+          }else{
+            jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeInRight");
+            jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideOutLeft");
+            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+            jQuery_1_6_1(this).html("Read More");
+            setTimeout(function(){
+              jQuery_1_6_1(".fullBlogText" + blogNumber).hide();
+              jQuery_1_6_1(".blogText" + blogNumber).show();
+              jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideOutLeft");
+              jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeInRight");
+            }, 800);
+          }
         }else{
-          jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeInRight");
-          jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideOutLeft");
-          jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
-          jQuery_1_6_1(this).html("Read More");
-          setTimeout(function(){
+          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+            jQuery_1_6_1(".fullBlogText" + blogNumber).show();
+            jQuery_1_6_1(".blogText" + blogNumber).hide();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+            jQuery_1_6_1(this).html("Read Less");
+          }else{
             jQuery_1_6_1(".fullBlogText" + blogNumber).hide();
             jQuery_1_6_1(".blogText" + blogNumber).show();
-            jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideOutLeft");
-            jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeInRight");
-          }, 800);
+            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+            jQuery_1_6_1(this).html("Read More");
+          }
         }
 
         //old code, keeping the code just to remember myself the difference between unoptimized lengthy and optimized short code.
