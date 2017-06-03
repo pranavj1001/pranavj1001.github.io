@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/blogStyle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -330,13 +331,23 @@ Pranav Jain</a>
         var blogNumber = jQuery_1_6_1(this).attr("blogNumber");
 
         if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+          jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideOutLeft");
+          jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideInLeft");
+          jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeInRight");
+          jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeOutRight");
           jQuery_1_6_1(".fullBlogText" + blogNumber).show();
-          jQuery_1_6_1(".blogText" + blogNumber).hide();
+          // jQuery_1_6_1(".blogText" + blogNumber).hide();
           jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
           jQuery_1_6_1(this).html("Read Less");
         }else{
-          jQuery_1_6_1(".fullBlogText" + blogNumber).hide();
-          jQuery_1_6_1(".blogText" + blogNumber).show();
+          jQuery_1_6_1(".blogText" + blogNumber).removeClass("animated fadeOutRight");
+          jQuery_1_6_1(".blogText" + blogNumber).addClass("animated fadeInRight");
+          jQuery_1_6_1(".fullBlogText" + blogNumber).removeClass("animated slideInLeft");
+          jQuery_1_6_1(".fullBlogText" + blogNumber).addClass("animated slideOutLeft");
+          setTimeout(function(){
+            jQuery_1_6_1(".fullBlogText" + blogNumber).hide();
+          }, 500);
+          // jQuery_1_6_1(".blogText" + blogNumber).show();
           jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
           jQuery_1_6_1(this).html("Read More");
         }
