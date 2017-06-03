@@ -19,6 +19,10 @@
   font-size: 23px;
 }
 
+.fullSiteWrapper{
+  overflow-x: hidden;
+}
+
 .jumbotron {
   color: white;
   padding-top: 2rem;
