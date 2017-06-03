@@ -21,7 +21,8 @@
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       var jQuery_1 = $.noConflict(true);
-      jQuery_1(window).load(function(){jQuery_1("#loader").fadeOut("slow");});
+      jQuery_1(window).load(function(){console.log("Reached here");jQuery_1("#loader").fadeOut("slow");console.log("Reached here after fading out");});
+      console.log("Reached here after loading window");
     </script> 
 
     <!-- Google Fonts - Bubbler One -->
