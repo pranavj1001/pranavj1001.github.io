@@ -13,6 +13,11 @@
   background: url('../img/loading3.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
+.fullBlogText1, .fullBlogText2, .fullBlogText3{
+  display: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .jumbotron {
   color: white;
   padding-top: 2rem;
@@ -41,7 +46,7 @@
   font-weight: 600;
 }
 
-.blogText{
+.blogText1, .blogText2, .blogText3 {
   font-size: 23px;
   font-family: 'Josefin Sans', sans-serif;
 }
