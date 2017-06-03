@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="css/blogStyle.css" rel="stylesheet">
+    <link href="css/blogStyle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
@@ -77,8 +77,8 @@ Pranav Jain</a>
         <h2 class="blogTitle">Stress Buster<span class="blogDate">  10th January 2016</span></h2>
         <!-- <p class="blogDate">10th Jan 2016</p> -->
         <p class="blogText3">“Life is not easy” said an engineering student like me. I’ve written many essays, speeches on topics like this, but I don’t know why it takes a week for me to note down same ideas.......</p>
-        <button class="btn btn-outline-primary my-2 my-sm-0 readMore3">Read More</button>
         <p class="fullBlogText3">
+          <br><br>
           <b>Stress Buster</b><br><br>
 
           “Life is not easy” said an engineering student like me.<br><br>
@@ -110,6 +110,7 @@ Pranav Jain</a>
           -Pranav Jain<br><br>
 
         </p>
+        <button class="btn btn-outline-primary my-2 my-sm-0 readMore" fullTextHidden="1" blogNumber="3">Read More</button>
       </div>
 
     </div>
@@ -121,8 +122,8 @@ Pranav Jain</a>
         <h2 class="blogTitle">Xperia Z1 Review<span class="blogDate">  08th March 2015</span></h2>
         <!-- <p class="blogDate">10th Jan 2016</p> -->
         <p class="blogText2">I know I’m late to give a review to this phone. There are hundreds of articles on this phone. But this is my honest review about this phone. I’ve used this phone for over a year........</p>
-        <button class="btn btn-outline-primary my-2 my-sm-0 readMore2">Read More</button>
         <p class="fullBlogText2">
+        <br><br>
         I know I’m late to give a review to this phone. There are hundreds of articles on this phone. But this is my honest review about this phone. I’ve used this phone for over a year now. So you wont go wrong anywhere reading this review if you’re still interested in buying this phone.<br><br>
 
         Let’s Start!<br><br>
@@ -180,6 +181,7 @@ Pranav Jain</a>
         - Pranav Jain<br><br>
 
         </p>
+        <button class="btn btn-outline-primary my-2 my-sm-0 readMore" fullTextHidden="1" blogNumber="2">Read More</button>
       </div>
 
     </div>
@@ -191,8 +193,8 @@ Pranav Jain</a>
         <h2 class="blogTitle">One Plus One Review<span class="blogDate">  22nd January 2015</span></h2>
         <!-- <p class="blogDate">10th Jan 2016</p> -->
         <p class="blogText1">You have to be the lucky one to get your hands on this phone. Hey this is my Second Review. It’s about current Daily Driver. OnePlus created (and is creating) a lot of noise.......</p>
-        <button class="btn btn-outline-primary my-2 my-sm-0 readMore1">Read More</button>
         <p class="fullBlogText1">
+          <br><br>
           YOU HAVE TO BE THE LUCKY <b>ONE</b> TO GET YOUR HANDS ON THIS PHONE<br><br>
 
           Hey this is my Second Review. It’s about my current Daily Driver. OnePlus created (and is creating) a lot of noise because of their phone ‘ONE’. This price of this phone is very reasonable. That’s one of the most important reason of me buying this phone. It packs an awesome package of hardware, great for daily life. There are many reasons to love this phone and few to skip this phone.<br><br>
@@ -257,6 +259,7 @@ Pranav Jain</a>
 
           - Pranav Jain <br><br>
         </p>
+        <button class="btn btn-outline-primary my-2 my-sm-0 readMore" fullTextHidden="1" blogNumber="1">Read More</button>
       </div>
 
     </div>
@@ -319,6 +322,47 @@ Pranav Jain</a>
         jQuery_1_6_1("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
       });
+
+      jQuery_1_6_1(".readMore").click(function(){
+        if(jQuery_1_6_1(this).attr("blogNumber") == 1){
+          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+            jQuery_1_6_1(".fullBlogText1").show();
+            jQuery_1_6_1(".blogText1").hide();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+            jQuery_1_6_1(this).html("Read Less");
+          }else{
+            jQuery_1_6_1(".fullBlogText1").hide();
+            jQuery_1_6_1(".blogText1").show();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+            jQuery_1_6_1(this).html("Read More");
+          }
+        }else if(jQuery_1_6_1(this).attr("blogNumber") == 2){
+          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+            jQuery_1_6_1(".fullBlogText2").show();
+            jQuery_1_6_1(".blogText2").hide();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+            jQuery_1_6_1(this).html("Read Less");
+          }else{
+            jQuery_1_6_1(".fullBlogText2").hide();
+            jQuery_1_6_1(".blogText2").show();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+            jQuery_1_6_1(this).html("Read More");
+          }
+        }else if(jQuery_1_6_1(this).attr("blogNumber") == 3){
+          if(jQuery_1_6_1(this).attr("fullTextHidden") == 1){
+            jQuery_1_6_1(".fullBlogText3").show();
+            jQuery_1_6_1(".blogText3").hide();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "0"});
+            jQuery_1_6_1(this).html("Read Less");
+          }else{
+            jQuery_1_6_1(".fullBlogText3").hide();
+            jQuery_1_6_1(".blogText3").show();
+            jQuery_1_6_1(this).attr({"fullTextHidden": "1"});
+            jQuery_1_6_1(this).html("Read More");
+          }
+        }
+      });
+
     </script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

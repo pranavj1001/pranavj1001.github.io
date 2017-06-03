@@ -16,6 +16,7 @@
 .fullBlogText1, .fullBlogText2, .fullBlogText3{
   display: none;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 23px;
 }
 
 .jumbotron {
