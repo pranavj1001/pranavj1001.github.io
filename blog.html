@@ -18,14 +18,22 @@
     <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+      var jQuery_1 = $.noConflict(true);
+      jQuery_1(window).load(function(){jQuery_1("#loader").fadeOut("slow");});
+    </script> 
+
     <!-- Google Fonts - Bubbler One -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <!-- Google Fonts - Josefin Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
 
   </head>
 
   <body>
+
+    <div id="loader"></div>
 
     <div class="collapse bg-inverse" id="navbarHeader">
       <div class="container">
