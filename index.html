@@ -62,6 +62,7 @@
                   <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
                   <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
                   <li id="blogs"><a href="blog.html">Blogs</a></li>
+                  <li id="learn"><a href="#">Learn Languages</a></li>
                   <li id="resume"><a href="https://drive.google.com/file/d/0B-BUMA5Q1ioQSnFGaXd3MktvZHM/view?usp=sharing">Resume</a></li>
                   <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
                 </ul>
@@ -83,6 +84,7 @@
                     <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
                     <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
                     <li id="blogs"><a href="blog.html">Blogs</a></li>
+                    <li id="learn"><a href="#">Learn Languages</a></li>
                     <li id="resume"><a href="https://drive.google.com/file/d/0B-BUMA5Q1ioQSnFGaXd3MktvZHM/view?usp=sharing">Resume</a></li>
                     <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
                   </ul>
@@ -439,6 +441,7 @@
       var contact = document.getElementById("contact");
       var resume = document.getElementById("resume");
       var blogs = document.getElementById("blogs");
+      var learn = document.getElementById("learn");
 
       var makeActive = {
 
@@ -448,6 +451,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           home.className += " active";    
         },
@@ -458,6 +462,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           projects.className += " active";    
         },
@@ -468,6 +473,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           contact.className += " active";    
         },
@@ -478,6 +484,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           resume.className += " active";    
         },
@@ -488,8 +495,20 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           blogs.className += " active";    
+        }
+
+        learnTab: function(){
+          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+
+          learn.className += " active";    
         }
 
       };
@@ -524,6 +543,10 @@
 
       jQuery_1_6_1(".resume").click(function () {
         makeActive.resumeTab();
+      });
+
+      jQuery_1_6_1(".learn").click(function () {
+        makeActive.learnTab();
       });
 
       //Below code is currently commented because it is not needed rn
