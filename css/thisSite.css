@@ -644,6 +644,23 @@ footer:after{
   padding-top: 100px;
 }
 
+@media (min-width: 576px) and (max-width: 992px){
+  .smallTextOnTablet{
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  .overlay{
+    padding: 10px !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1192px){
+  .smallTextOnTablet{
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+}
+
 .game h2, .app h2, .design h2{
   font-size: 45px;
 }
