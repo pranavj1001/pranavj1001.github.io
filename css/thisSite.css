@@ -365,7 +365,7 @@ body {
 }
 
 footer{
-  background-color: #222 !important; 
+  background-color: #222 !important;
   padding-top: 150px;
   padding-bottom: 50px;
   position:relative;
@@ -376,7 +376,7 @@ footer{
 footer:after{
   content:''; /* Required to display content */
   position: absolute; /* Sets the position absolute to the top div */
-  top: 0; 
+  top: 0;
   left: 50%;
   margin-left: -50px; /* Set margin equal to border px */
   width: 0;
@@ -609,7 +609,6 @@ footer:after{
 }
 
 .gameIntro{
-  margin-top: 50px;
   color: white;
   background: #141E30; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
@@ -621,7 +620,7 @@ footer:after{
 }
 
 .appIntro{
-  /*margin-top: 50px;*/
+  margin-top: 50px;
   color: white;
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #111 , #333, #111); /* Chrome 10-25, Safari 5.1-6 */
