@@ -313,6 +313,16 @@ body {
   margin-top: 50px;
 }
 
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
 .masthead{
   width: 100%;
 }
