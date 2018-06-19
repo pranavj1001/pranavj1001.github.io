@@ -9,3 +9,5 @@ This site contains details about me, my projects and the work that I've done rec
 * HTML
 * CSS
 * JavaScript
+
+Playground integration coming soon!
