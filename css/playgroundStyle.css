@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .navbar {
   margin-bottom: 0;
   background: #141E30 !important; /* fallback for old browsers */
@@ -66,6 +72,16 @@
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  margin-top: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sticky-footer {
+  min-height: 100%;
+  position: relative;
   margin-top: 50px;
 }
 
@@ -148,11 +164,11 @@ footer p {
 
 .tools-group {
   text-align: center;
-  margin-top: 50px;
 }
 
 #html_css_js, #colors {
   display: block;
   margin: 20px auto 20px auto;
   background-color: #CCC;
+  min-width: 220px;
 }
