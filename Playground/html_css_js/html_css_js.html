@@ -48,7 +48,6 @@
 
         const check = document.querySelector('iframe');
         const parent = document.getElementById('output');
-        console.log(check);
         if(check === null) {
           createIframe(parent, finalCode);
         } else {
@@ -56,7 +55,6 @@
           iframes[0].parentNode.removeChild(iframes[0]);
           createIframe(parent, finalCode);
         }
-        // console.log(finalCode);
       };
 
       const createIframe = (parent, finalCode) => {
