@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#232526">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Playground - Pranav Jain - @pranavj1001</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class="col-0" id="html">
+        <textarea id="htmlValue" placeholder="HTML goes here"></textarea>
+      </div>
+      <div class="col-1" id="css">
+        <textarea id="cssValue" placeholder="CSS goes here"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-0" id="js">
+        <textarea id="jsValue" placeholder="JS goes here"></textarea>
+      </div>
+      <div class="col-1" id="output">
+        <!-- <iframe id="output"></iframe> -->
+      </div>
+    </div>
+
+    <button onclick="showOutput()">Run</button>
+    <button onclick="clearInput()">Clear</button>
+
+    <script type="text/javascript">
+
+      const showOutput = () => {
+        const htmlText = document.getElementById('htmlValue').value;
+        const cssText = document.getElementById('cssValue').value;
+        const jsText = document.getElementById('jsValue').value;
+        const finalCode = `<html><style>${cssText}</style><body>${htmlText}</body><script>${jsText}<\/script></html>`;
+
+        const check = document.querySelector('iframe');
+        const parent = document.getElementById('output');
+        if(check === null) {
+          createIframe(parent, finalCode);
+        } else {
+          parent.removeChild(check);
+          createIframe(parent, finalCode);
+        }
+        // console.log(finalCode);
+      };
+
+      const createIframe = (parent, finalCode) => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(finalCode);
+        parent.appendChild(iframe);
+      };
+
+      const clearInput = () => {
+        document.getElementById('htmlValue').value = '';
+        document.getElementById('cssValue').value = '';
+        document.getElementById('jsValue').value = '';
+      };
+
+    </script>
+
+  </body>
+</html>
