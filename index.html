@@ -44,7 +44,7 @@
                   <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
                   <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
                   <li id="blogs"><a href="blog.html">Blogs</a></li>
-                  <li id="learn"><a href="Playground/playground.html">Playground</a></li>
+                  <li id="playground"><a href="Playground/playground.html">Playground</a></li>
                   <li id="resume"><a href="https://drive.google.com/file/d/1v-TvTQi0TK4gSKrtmss39J7JiVr_rviO/view?usp=sharing">Resume</a></li>
                   <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
                 </ul>
@@ -67,7 +67,7 @@
                     <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
                     <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
                     <li id="blogs"><a href="blog.html">Blogs</a></li>
-                    <li id="learn"><a href="https://github.com/pranavj1001/LearnLanguages">Learn Languages</a></li>
+                    <li id="playground"><a href="Playground/playground.html">Playground</a></li>
                     <li id="resume"><a href="https://drive.google.com/file/d/0B-BUMA5Q1ioQSnFGaXd3MktvZHM/view?usp=sharing">Resume</a></li>
                     <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
                   </ul>
@@ -507,7 +507,7 @@
       var contact = document.getElementById("contact");
       var resume = document.getElementById("resume");
       var blogs = document.getElementById("blogs");
-      var learn = document.getElementById("learn");
+      var playground = document.getElementById("playground");
 
       var makeActive = {
 
@@ -517,7 +517,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           home.className += " active";
         },
@@ -528,7 +528,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           projects.className += " active";
         },
@@ -539,7 +539,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           contact.className += " active";
         },
@@ -550,7 +550,7 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           resume.className += " active";
         },
@@ -561,20 +561,20 @@
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
           blogs.className += " active";
         },
 
-        learnTab: function(){
+        playgroundTab: function(){
           home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
           blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          learn.className = learn.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
 
-          learn.className += " active";
+          playground.className += " active";
         }
 
       };
@@ -611,8 +611,8 @@
         makeActive.resumeTab();
       });
 
-      jQuery_1_6_1(".learn").click(function () {
-        makeActive.learnTab();
+      jQuery_1_6_1(".playground").click(function () {
+        makeActive.playgroundTab();
       });
 
       var currentHeading = document.getElementById("mainHeading");
