@@ -10,4 +10,7 @@ This site contains details about me, my projects and the work that I've done rec
 * CSS
 * JavaScript
 
-Playground integration coming soon!
+Playground integration is now live!
+
+Full feature list and site details will be up soon.
+
