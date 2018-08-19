@@ -14,4 +14,4 @@ Playground integration is now complete and is live!
 
 Full feature list and site details will be up soon.
 
-Major Site revamp is in the works.
+**Note**: Major Site revamp is in the works.
