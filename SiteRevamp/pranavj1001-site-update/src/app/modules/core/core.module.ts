@@ -10,7 +10,9 @@ import { GlobalSharedModule } from '../global-shared-module/global-shared-module
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent,
+  ],
   imports: [
     CommonModule,
     CoreRoutingModule,
