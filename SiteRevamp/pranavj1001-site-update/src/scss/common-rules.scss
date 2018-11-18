@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 %background-full-size {
     background-repeat: no-repeat;
     background-size: cover;
@@ -5,9 +7,9 @@
 }
 
 %rainbow-gradient-with-animation {
-    background: #23A6D5;
-    background: -webkit-linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background: linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: $light-sky-blue;
+    background: -webkit-linear-gradient(to right, $peach, $magenta, $light-sky-blue, $turquoise);
+    background: linear-gradient(to right, $peach, $magenta, $light-sky-blue, $turquoise);
     background-size: 400% 400%;
     -webkit-animation: GradientAnimation 15s ease infinite;
 	-moz-animation: GradientAnimation 15s ease infinite;
