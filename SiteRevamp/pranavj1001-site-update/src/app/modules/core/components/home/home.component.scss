@@ -1,0 +1,20 @@
+@import 'src/scss/index.scss';
+
+.home-component-body {    
+    height: 100%;
+    background-color: #1c202b;
+    // background: url('src/assets/home-component/light-background.jpg');
+    // @extend %background-full-size;
+
+    .home-component--site-card {
+        background: #1f1f1f;
+    }
+
+    .home-component--site-card-heading {
+        font-family: $monoton-font-stack;
+        font-size: 4rem;
+        text-align: center;
+        color: $white;
+    }
+
+}

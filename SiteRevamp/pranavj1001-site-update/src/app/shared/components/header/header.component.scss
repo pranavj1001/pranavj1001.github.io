@@ -1,0 +1,6 @@
+@import 'src/scss/index.scss';
+
+.header-component-top-strip {
+    height: 10px;
+    @extend %rainbow-gradient;
+}

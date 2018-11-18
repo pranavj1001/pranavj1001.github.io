@@ -1,0 +1,6 @@
+@import 'src/scss/index.scss';
+
+.footer-component-bottom-strip {
+    height: 10px;
+    @extend %rainbow-gradient;
+}
