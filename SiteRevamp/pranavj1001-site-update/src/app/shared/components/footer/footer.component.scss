@@ -2,5 +2,5 @@
 
 .footer-component-bottom-strip {
     height: 10px;
-    @extend %rainbow-gradient;
+    @extend %rainbow-gradient-with-animation;
 }

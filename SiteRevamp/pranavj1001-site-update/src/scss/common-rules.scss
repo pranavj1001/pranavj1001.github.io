@@ -4,8 +4,49 @@
     background-position: center;
 }
 
-%rainbow-gradient {
-    background: #40E0D0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+%rainbow-gradient-with-animation {
+    background: #23A6D5;
+    background: -webkit-linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+	-moz-animation: GradientAnimation 15s ease infinite;
+	animation: GradientAnimation 15s ease infinite;
+
+    @-webkit-keyframes GradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @-moz-keyframes GradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes GradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
 }
+
