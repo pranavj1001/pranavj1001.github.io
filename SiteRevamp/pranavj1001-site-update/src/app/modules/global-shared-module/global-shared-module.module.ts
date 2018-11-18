@@ -13,4 +13,4 @@ import { FooterComponent } from 'src/app/shared/components/footer/footer.compone
     CommonModule
   ]
 })
-export class GlobalSharedModuleModule { }
+export class GlobalSharedModule { }
