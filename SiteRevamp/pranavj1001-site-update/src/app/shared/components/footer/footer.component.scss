@@ -1,6 +1,12 @@
 @import 'src/scss/index.scss';
 
-.footer-component-bottom-strip {
-    height: 10px;
-    @extend %rainbow-gradient-with-animation;
+.footer-component {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    .footer-component-bottom-strip {
+        height: 10px;
+        @extend %rainbow-gradient-with-animation;
+    }
 }

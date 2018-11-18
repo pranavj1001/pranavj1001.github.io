@@ -1,7 +1,9 @@
 @import 'src/scss/index.scss';
 
 .home-component-body {    
-    height: 100%;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #1c202b;
     // background: url('src/assets/home-component/light-background.jpg');
     // @extend %background-full-size;
@@ -15,6 +17,7 @@
         font-size: 4rem;
         text-align: center;
         color: $white;
+        margin-bottom: 0;
     }
 
 }
