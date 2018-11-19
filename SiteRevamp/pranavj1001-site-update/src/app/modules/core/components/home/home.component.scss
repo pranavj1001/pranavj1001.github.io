@@ -1,0 +1,30 @@
+@import 'src/scss/index.scss';
+
+.home-component-body {    
+    min-height: 100vh;
+    padding: 50px 15px 50px 15px;
+    background-color: $navy-blue;
+    // background: url('src/assets/home-component/light-background.jpg');
+    // @extend %background-full-size;
+
+    .home-component--site-card {
+        background: $dark-grey;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        @extend %rainbow-shadow-with-animation;
+    }
+
+    .home-component--site-card-heading {
+        font-family: $monoton-font-stack;
+        font-size: 2rem;
+        text-align: center;
+        color: $white;
+        margin-bottom: 0;
+
+        @media (min-width: $tablet) {
+            font-size: 4rem;
+        }
+    }
+
+}

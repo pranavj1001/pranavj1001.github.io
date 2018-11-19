@@ -1,0 +1,11 @@
+@import 'src/scss/index.scss';
+
+.header-component {
+    position: absolute;
+    width: 100%;
+
+    .header-component-top-strip {
+        height: 10px;
+        @extend %rainbow-gradient-with-animation;
+    }
+}
