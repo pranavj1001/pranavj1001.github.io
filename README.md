@@ -10,7 +10,7 @@ This site is about me, my projects and the work that I've done recently.
 * CSS
 * JavaScript
 
-Playground integration is now complete and is live!
+Playground integration is now complete and is live [here](https://pranavj1001.github.io/tools/web-tools.html)!
 
 Full feature list and site details will be up soon.
 
