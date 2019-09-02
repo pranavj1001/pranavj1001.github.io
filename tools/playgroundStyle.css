@@ -112,7 +112,7 @@ footer p {
   text-align: center;
 }
 
-#html_css_js, #colors {
+#html_css_js, #colors, #json_viewer {
   display: block;
   margin: 20px auto 20px auto;
   background-color: #CCC;
@@ -120,7 +120,7 @@ footer p {
   color: #555;
 }
 
-#html_css_js:focus, #html_css_js:hover, #colors:focus, #colors:hover {
+#html_css_js:focus, #html_css_js:hover, #colors:focus, #colors:hover, #json_viewer:hover, #json_viewer:focus {
   border: 1px solid #428bca;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 200ms ease-out;
