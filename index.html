@@ -1,590 +1,378 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#232526">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="img/favicon.png">
 
-    <title>Home - Pranav Jain - @pranavj1001</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#232526">
+  <link rel="icon" href="../../img/favicon.png">
+  <title>Pranav Jain | Software Engineer | Gamer | Cyclist | Student</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="author" content="Pranav Jain">
+  <meta name="description" content="Pranav Jain's Portfolio">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Poppins:wght@400;600&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+  <link rel="stylesheet" href="./style.css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/thisSite.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(window).load(function(){$(".loader").fadeOut("slow");});
-    </script>
-  </head>
-
-  <body data-spy="scroll" data-target="#desktop" data-offset="50">
-    <div class="fullSiteWrapper">
-
-    <div class="loader"></div>
-
-    <div class="site-wrapper Background">
-
-      <div class="site-wrapper-inner">
-
-          <div id="desktop" class="masthead clearfix headerTop">
-            <div class="inner navLike">
-              <h3 class="masthead-brand navHeading" id="nameHeading"> Pranav Jain </h3>
-              <nav>
-                <ul class="nav masthead-nav customNavItems">
-                  <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
-                  <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
-                  <li id="blogs"><a href="blog.html">Blogs</a></li>
-                  <li id="playground"><a href="tools/web-tools.html" target="_blank">Playground</a></li>
-                  <li id="resume"><a href="https://drive.google.com/file/d/1qpsrJZN4c58D3Bq1PrFez2bE6BBMPN-K/view?usp=sharing">Resume</a></li>
-                  <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
-                  <li id="newSite"><a href="/SiteRevamp/pranavj1001-site-update/dist/pranavj1001-site-update">New Site</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-        <div id="mobile">
-
-          <div class="collapse bg-inverse" id="navbarHeader">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-8 py-4">
-                  <h4 class="text-white">Home</h4>
-                  <p class="text-muted">Welcome! Have a great day ahead</p>
-                </div>
-                <div class="col-sm-4 py-4">
-                  <h4 class="text-white">Options</h4>
-                  <ul class="list-unstyled">
-                    <li class="active" id="home"><a href="#" class="homeDetails">Home</a></li>
-                    <li id="projects"><a href="#recentWorks" class="projectDetails">Projects</a></li>
-                    <li id="blogs"><a href="blog.html">Blogs</a></li>
-                    <li id="playground"><a href="Playground/playground.html">Playground</a></li>
-                    <li id="resume"><a href="https://drive.google.com/file/d/0B-BUMA5Q1ioQSnFGaXd3MktvZHM/view?usp=sharing">Resume</a></li>
-                    <li id="contact"><a href="#footerDistributed" class="contactDetails">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <div class="navbar navbar-inverse bg-inverse">
-          <div class="container d-flex justify-content-between">
-            <a href="index.html" class="navbar-brand">Pranav Jain</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        </div>
-
-        <div class="cover-container">
-
-          <div class="inner cover">
-            <h1 class="cover-heading" id="mainHeading" data-aos="fade-right">Hey There</h1>
-            <h2 class="post">Developer | Creator | Gamer</h2>
-            <p class="lead introParagraph">My name is Pranav Jain. This is my site. It contains information about me. You can view the projects that I've made or have worked on so far. Also, I'll be posting here many cool things.<br>You are invited to come, share, gain knowledge and ideas.</p>
-          </div>
-
-          <div class="mastfoot shortLivedFooter">
-            <div class="inner">
-              <p>Designed with <span style="color: red;">&#10084;</span> by<a href="https://github.com/pranavj1001" target="_blank"><I> Pranav Jain</I></a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="container afterLeaves">
-      <div class="shortBio">
-        <img src="img/me.jpg" class="imgCircle" data-aos="zoom-in">
-      </div>
-    </div>
-
-    <div class="container afterdp">
-      <div class="aboutME">
-        <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-          <p>.....I have deep interest in travelling and coding. I'm practicing and playing with Machine Learning algorithms and trying new technologies everyday. I'm adventurous (have scaled few peaks, parasailing, trekking) and like to go to the gym. I'm a technophile and a mouse potato. And yeah I'm a gamer too!</p>
-         </div>
-    </div>
-
-     <!-- Projects ShowCase (Starts)-->
-    <section id="recentWorks">
-        <div class="container">
-          <div class="recentWorksHeading">
-            <h2 style="font-size: 45px;">Recent Projects</h2>
-            <p style="font-size: 20px;">All my recent projects can be viewed from here.</p>
-          </div>
-          <div class="row rwrow">
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-down">
-              <img class="img-responsive" src="img/js.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Container Spotter</p></h3>
-                  <p class="smallTextOnTablet">Web application to fit cuboids in a cuboid.</p>
-                  <a class="preview" href="https://github.com/pranavj1001/container-spotter" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="recent-work-wrap" data-aos="fade-up-left">
-              <img class="img-responsive" src="img/python.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Image Classification</p></h3>
-                  <p class="smallTextOnTablet">Convolutional Neural Network to classify images</p>
-                  <a class="preview" href="https://github.com/pranavj1001/Image-Classification" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="recent-work-wrap" data-aos="fade-up">
-              <img class="img-responsive" src="img/python.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Churn Model</p></h3>
-                  <p class="smallTextOnTablet">Artificial Neural Network to predict whether a customer will leave the bank's service or not</p>
-                  <a class="preview" href="https://github.com/pranavj1001/MachineLearningRecipes/tree/master/Churn_Modelling" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="recent-work-wrap" data-aos="fade-up">
-              <img class="img-responsive" src="img/python.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">TeenHub</p></h3>
-                  <p class="smallTextOnTablet">One Place for your Entertainment <br> (Final Year Project)</p>
-                  <a class="preview" href="https://github.com/pranavj1001/TeenHub" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="recent-work-wrap" data-aos="fade-up-right">
-              <img class="img-responsive" src="img/js.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">NotesOnline</p></h3>
-                  <p class="smallTextOnTablet">React-Native and Redux application to store notes online using firebase</p>
-                  <a class="preview" href="https://github.com/pranavj1001/NotesOnline" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-right">
-              <img class="img-responsive" src="img/js.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Slack Clone</p></h3>
-                  <p class="smallTextOnTablet">Six chatbots: Assistant, Version Control System, StockBot, MovieBot, DoctorBot, NewsBot. </p>
-                  <a class="preview" href="https://github.com/pranavj1001/SlackClone" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-left">
-              <img class="img-responsive" src="img/java.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Computer Networking Application</p></h3>
-                  <p class="smallTextOnTablet">AntiVirus, VPN, SSH, FTP, Encryption &amp; Decryption.</p>
-                  <a class="preview" href="https://github.com/pranavj1001/Multipurpose-Computer-Networking-Application" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-left">
-              <img class="img-responsive" src="img/php.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Twitter Clone</p></h3>
-                  <p class="smallTextOnTablet">Based on core principles of Twitter but different in many ways. </p>
-                  <a class="preview" href="https://github.com/pranavj1001/TwitterClone" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-right">
-              <img class="img-responsive" src="img/matlab.png" alt="">
-               <div class="overlay">
-                <div class="recent-work-inner">
-                <h3><p class="smallTextOnTablet">Matlab project on Android Phone Sensors.</p></h3>
-                <p class="smallTextOnTablet">Awesomeness of Android Phone Sensors.</p>
-                <a class="preview" href="https://github.com/pranavj1001/MatlabAndroidSensorsProject" target="_blank"><i class="fa fa-eye"></i> View</a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-down">
-              <img class="img-responsive" src="img/js.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">Scheduling Animation Tool</p></h3>
-                  <p class="smallTextOnTablet">One tool for monitoring the ships!</p>
-                  <a class="preview" href="https://github.com/pranavj1001/SchedulingAnimationTool" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 desktop-only">
-              <div class="recent-work-wrap" data-aos="fade-down-right">
-                <img class="img-responsive" src="img/js.png" alt="">
-                <div class="overlay">
-                  <div class="recent-work-inner">
-                  <h3><p class="smallTextOnTablet">JavaScript Based Game</p> </h3>
-                  <p class="smallTextOnTablet">A simple yet very enjoyable 2D Tennis game.</p>
-                  <a class="preview" href="https://github.com/pranavj1001/JavaScript-Based-Game" target="_blank"><i class="fa fa-eye"></i> View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Projects ShowCase (Ends)-->
-
-      <!-- Apps Container (Starts)-->
-      <div class="fluid-container appIntro" data-aos="flip-up">
-        <div class="container app">
-          <h2 data-aos="fade-up">Apps!</h2>
-          <p data-aos="fade-up">Apps amaze and astonish me a lot. That's why I got myself into App Development. Now, I develop native applications for mobile, desktops and web based applications. I have also developed ML based applications using Python.</p>
-        </div>
-      </div>
-
-      <div class="fluid-container">
-        <div class="appContainer">
-          <h2 data-aos="fade-up">Try out some of my apps</h2>
-          <p data-aos="fade-up">The apps are free to download.</p>
-          <button onclick="location.href='app.html'" type="button" class="btn btn-primary" id="tryApps" data-aos="fade-up">View Apps</button>
-        </div>
-      </div>
-      <!-- Apps Container (Ends)-->
-
-      <!-- Games Container (Starts)-->
-      <div class="fluid-container gameIntro" data-aos="flip-up">
-        <div class="container game">
-          <h2 data-aos="fade-up">Games!</h2>
-          <p data-aos="fade-up">Games have been a important part of my childhood. I enjoyed and even today, enjoy playing games. After taking up engineering, I've taken this passion to another level by developing games. Although, I'm not a pro yet, I'm still learning and getting better every day. I hope you like games too. Below you'll find my games.</p>
-        </div>
-      </div>
-
-      <div class="fluid-container">
-        <div class="gameContainer">
-          <h2 data-aos="fade-up">Wanna play some games?</h2>
-          <p data-aos="fade-up">Just Tap on the button to get started.</p>
-          <button onclick="location.href='game.html'" type="button" class="btn btn-primary" id="playGame" data-aos="fade-up">View Games</button>
-        </div>
-      </div>
-      <!-- Games Container (Ends)-->
-
-      <!-- Designs Container (Starts)-->
-      <div class="fluid-container designIntro" data-aos="flip-up">
-        <div class="container design">
-          <h2 data-aos="fade-up">Designs!</h2>
-          <p data-aos="fade-up">According to me, inorder to become a full stack developer, one needs to know Adobe Photoshop and Illustrator to create new arts. I liked drawing and digital drawing is a whole new platform. Below you'll find some of my designs.</p>
-        </div>
-      </div>
-
-      <div class="fluid-container">
-        <div class="designContainer">
-          <h2 data-aos="fade-up">Check out some of my designs.</h2>
-          <p data-aos="fade-up">Tap the button to view them.</p>
-          <button onclick="location.href='design.html'" type="button" class="btn btn-primary" id="tryApps" data-aos="fade-up">View Designs</button>
-        </div>
-      </div>
-      <!-- Designs Container (Ends)-->
-
-      <footer class="footer-distributed">
-
-      <div class="footer-left">
-        <h3>Pranav Jain</h3>
-        <p class="footer-links">
-          <a class="homeDetails" href="#">Home</a>
-          ·
-          <a class="projectDetails" href="#recentWorks">Projects</a>
-          ·
-          <a href="blog.html">Blog</a>
-          ·
-          <a href="https://drive.google.com/file/d/0B-BUMA5Q1ioQSnFGaXd3MktvZHM/view?usp=sharing">Resume</a>
-          ·
-          <a class="contactDetails" href="#footerDistributed">Contact</a>
-        </p>
-        <p class="footer-name">&copy; Pranav Jain, 2017</p><br>
-        <p class="footer-name"><input type="checkbox" id="nightMode"> NightMode (beta)</p>
-      </div>
-
-      <div class="footer-center" id="footerDistributed">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Eating at a Pizzaria</span> Mumbai, India</p>
-        </div>
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>Send me an email to request for my number</p>
-        </div>
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:pranavj1001@gmail.com">pranavj1001@gmail.com</a></p>
-        </div>
-      </div>
-
-      <div class="footer-right">
-
-        <p class="footer-about">
-          <span>About Me</span>
-          You can find more about me at social platforms. To do so click on links given below. However, I occasionally log on to FaceBook and Twitter.
-        </p>
-
-        <div class="footer-icons">
-          <a href="https://www.linkedin.com/in/pranav-jain-b5b877111/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/pranavj1001"><i class="fa fa-github"></i></a>
-          <a href="https://www.facebook.com/pranav.jain.338"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/pranavj1000001"><i class="fa fa-twitter"></i></a>
-        </div>
-      </div>
-
-    </footer>
-
-    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <!-- For Device Detection, I'm using wurfl.io -->
-    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
-
-    <script type="text/javascript">
-
-      if(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App"){
-        document.getElementById("desktop").style.display = 'none';
-        document.getElementById("mainHeading").style.marginTop = "150px";
-      }else{
-        document.getElementById("mobile").style.display = 'none';
+  <style id="">
+    [data-typeit-id]:before {
+      content: '.';
+      display: inline-block;
+      width: 0;
+      visibility: hidden;
+    }
+  </style>
+  <style id="2859300">
+    @keyframes blink-2859300 {
+      0% {
+        opacity: 0
       }
 
-      AOS.init();
-
-      var jQuery_1_6_1 = $.noConflict(true);
-      var home  = document.getElementById("home");
-      var projects = document.getElementById("projects");
-      var contact = document.getElementById("contact");
-      var resume = document.getElementById("resume");
-      var blogs = document.getElementById("blogs");
-      var playground = document.getElementById("playground");
-
-      var makeActive = {
-
-        homeTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          home.className += " active";
-        },
-
-        projectsTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          projects.className += " active";
-        },
-
-        contactTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          contact.className += " active";
-        },
-
-        resumeTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          resume.className += " active";
-        },
-
-        blogsTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          blogs.className += " active";
-        },
-
-        playgroundTab: function(){
-          home.className = home.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          projects.className = projects.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          contact.className = contact.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          resume.className = resume.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          blogs.className = blogs.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-          playground.className = playground.className.replace( /(?:^|\s)active(?!\S)/g , '' );
-
-          playground.className += " active";
-        }
-
-      };
-
-      jQuery_1_6_1(".topHome").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        makeActive.homeTab();
-        return false;
-      });
-
-      jQuery_1_6_1(".contactDetails").click(function () {
-        $("html, body").animate({ scrollTop: $("#footerDistributed").offset().top }, "slow");
-        makeActive.contactTab();
-        return false;
-      });
-
-      jQuery_1_6_1(".homeDetails").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        makeActive.homeTab();
-        return false;
-      });
-
-      jQuery_1_6_1(".projectDetails").click(function () {
-        $("html, body").animate({ scrollTop: $("#recentWorks").offset().top }, "slow");
-        makeActive.projectsTab();
-        return false;
-      });
-
-      jQuery_1_6_1(".blogs").click(function () {
-        makeActive.blogsTab();
-      });
-
-      jQuery_1_6_1(".resume").click(function () {
-        makeActive.resumeTab();
-      });
-
-      jQuery_1_6_1(".playground").click(function () {
-        makeActive.playgroundTab();
-      });
-
-      var currentHeading = document.getElementById("mainHeading");
-
-      function prepareNightMode(){
-          if(document.getElementById("nightMode").checked){
-            document.body.style.backgroundColor = "gray";
-          }else{
-            document.body.style.backgroundColor = "white";
-          }
+      49% {
+        opacity: 0
       }
 
-      window.onload = function(){
-
-        var count = 0;
-        var scroll_start = 0;
-        var startchange = $('.afterLeaves');
-        var startSecondChange = $('.gameIntro');
-        var startThirdChange = $('.lead');
-        var offset3 = startThirdChange.offset();
-        var offset2 = startSecondChange.offset();
-        var offset = startchange.offset();
-
-        if(!(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App")){
-          if (startchange.length){
-            $(window).scroll(function() {
-              scroll_start = $(this).scrollTop();
-              if(scroll_start > offset.top) {
-                $(".headerTop").css('background', '#141E30;');
-                $(".headerTop").css('background', '-webkit-linear-gradient(to left, #141E30 , #243B55)');
-                $(".headerTop").css('background', 'linear-gradient(to left, #141E30 , #243B55)');
-                //$(".shortLivedFooter").hide();
-              }else if(scroll_start < offset.top){
-                $(".headerTop").css('background', 'transparent');
-                //$(".shortLivedFooter").show();
-              }
-            });
-          }
-        }
-
-        if(!(WURFL.form_factor == "Mobile" || WURFL.form_factor == "Smartphone" || WURFL.form_factor == "App" || WURFL.form_factor == "Tablet")){
-          if (startSecondChange.length){
-            $(window).scroll(function() {
-              scroll_start = $(this).scrollTop();
-              if(scroll_start > offset2.top) {
-                $(".headerTop").css('background', 'transparent');
-                $(".shortLivedFooter").hide();
-              }
-            });
-          }
-        }
-
-        if (startSecondChange.length){
-          $(window).scroll(function() {
-            scroll_start = $(this).scrollTop();
-            if(scroll_start > offset3.top) {
-              $(".shortLivedFooter").hide();
-            }else{
-              $(".shortLivedFooter").show();
-            }
-          });
-        }
-
-        setInterval(function(){
-
-          if(count == 3){
-            currentHeading.innerHTML = "Hey There";
-            count = 0;
-          }else{
-            currentHeading.innerHTML += ".";
-            count++;
-          }
-
-        },1000);
-
-        setInterval(prepareNightMode,50);
-
+      50% {
+        opacity: 1
       }
+    }
 
-    </script>
-  </body>
+    [data-typeit-id='2859300'] .ti-cursor {
+      display: inline;
+      letter-spacing: -1em;
+      font-family: var(--ti-cursor-font-family, "Bebas Neue", sans-serif);
+      font-weight: var(--ti-cursor-font-weight, 700);
+      font-size: var(--ti-cursor-font-size, 179.2px);
+      font-style: var(--ti-cursor-font-style, normal);
+      line-height: var(--ti-cursor-line-height, normal);
+      color: var(--ti-cursor-color, rgb(13, 202, 240));
+      margin-left: var(--ti-cursor-margin-left, -.125em);
+      margin-right: var(--ti-cursor-margin-right, .125em);
+      animation: blink-2859300 1s infinite;
+    }
+
+    [data-typeit-id='2859300'] .ti-cursor.with-delay {
+      animation-delay: 500ms;
+    }
+
+    [data-typeit-id='2859300'] .ti-cursor.disabled {
+      animation: none;
+    }
+  </style>
+</head>
+
+<body translate="no" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+  <section id="header">
+    <div id="particles-js">
+    <h1>
+      <div><span>SOFTWARE ENGINEER</span></div>
+      <div id="title"><span data-typeit-id="2859300">Pranav Jain<span class="ti-cursor with-delay">|</span></span>
+      </div>
+    </h1>
+    <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.833 13.977l4.47-4.47 1.179 1.178L10 17.167l-6.482-6.482 1.179-1.178 4.47 4.47V3.833h1.666v10.144z"
+        fill="#777"></path>
+    </svg>
+    </div>
+  </section>
+
+  <section id="about" class="dark">
+    <div class="section-title">
+      <h2>ABOUT ME</h2>
+      <p>Me In a Nutshell</p>
+    </div>
+    <div>
+      <h3>Hey there, I'm <span class="blue">Pranav Jain</span></h3>
+      <div class="row">
+        <div>
+          <p>Currently, I'm a Senior Software Engineer @ BrowserStack</p>
+          <p>
+            I am a backend developer with over 5 years of experience in coding.
+            I am a self-taught coder who loves to create and learn something new each day.
+          </p>
+          <p>
+            I have worked on closed / open source projects that are being used by thousands of developers / QA / people
+            in IT field.
+            I specialize in <span class="blue">solving complex problems</span> and enable companies to achieve great
+            success through innovative solutions.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li><span>Current Role:</span> Senior Software Engineer</li>
+            <li><span>Working at:</span> BrowserStack</li>
+            <li><span>Work Experience:</span> 5+</li>
+            <li><span>Contact Me:</span> <a href="mailto:#">Click Here</a></li>
+            <li><span>Resume:</span> <a href="#">Click Here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title">
+      <h2>Experience</h2>
+      <p>Worked at</p>
+    </div>
+    <div>
+      <div class="container">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer @ <span class="blue">BrowserStack</span></h3>
+            <span class="grey">Feb 2021 - Now</span>
+            <ul>
+              <li>
+                Contributed to the growth of new products from few hundred sessions per day to 10s of thousands sessions per day by developing many important features and writing scalable code.
+              </li>
+              <li>
+                Took complete ownership of bringing support for Playwright on Android Platform. Also, contributed in open source to make sure everyone benefits from this. 
+              </li>
+              <li>
+                Improved Performance by ~20%. Achieved this by finding the bottlenecks and optimizing code. 
+              </li>
+              <li>
+                Reduced time spent in BAU items by automating entire release cycles. 
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer @ <span class="blue">Zeus Learning</span></h3>
+            <span class="grey">Jul 2018 - Jan 2021</span>
+            <ul>
+              <li>
+                Implemented new features like a framework to secure all API endpoints using JWTs and Hashing algorithms, an access management system, a framework for handling PII data.
+              </li>
+              <li>
+                Optimized Postgres and Redis database functions to improve backend processing time.
+              </li>
+              <li>
+                Developed a custom graph library to support rendering of graphs in frontend (Angular). 
+              </li>
+              <li>
+                Worked on.NET backend services and developed WCAG and 508 compliant frontend code. 
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Programmer Intern @ <span class="blue">eder.ai</span></h3>
+            <span class="grey">Dec 2017 - Jan 2018</span>
+            <ul>
+              <li>
+                Worked on developing the <a href="https://github.com/eder-ai/compass-db">CompassDB</a>. It's an open source ORM for <a href="https://github.com/blockstack/gaia">Gaia</a>
+              </li>
+              <li>
+                Was responsible for the writing the entire code, documentation and the landing page.  
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Web Development Teaching Assistant @ <span class="blue">Internshala</span></h3>
+            <span class="grey">Jul 2017 - Sep 2018</span>
+            <ul>
+              <li>
+                Helped in solving hundreds of web devlopment related doubts from students all over India.
+              </li>
+              <li>
+                Helped in reviewing the course and gave important feedback to improve the same.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="dark">
+    <div class="section-title">
+      <h2>SKILLS</h2>
+      <p>My Toolbox</p>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-code"></i>
+          <h3>Multi-Lingual</h3>
+        </div>
+        <p>I can code in JavaScript, Ruby, Python, Bash, C++, and C#. I can quickly learn the syntax of other languages whenever required.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-desktop"></i>
+          <h3>Technologies</h3>
+        </div>
+        <p>I have worked with Nodejs, Ruby on Rails, Docker, Kubernetes, Sidekiq, Jenkins, BigQuery, Kafka, and Unreal in my professional/personal projects.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-cloud"></i>
+          <h3>Cloud</h3>
+        </div>
+        <p>I have experience on cloud services like AWS EC2, Cloudfront, S3, RDS, and EKS. I have also written code in Terraform to maintain the infra.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-database"></i>
+          <h3>Multi-Lingual</h3>
+        </div>
+        <p>I have worked with databases like MySQL, Redis, ElasticSearch, MongoDB, and PostgresSQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="creations">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p>My Creations</p>
+    </div>
+      <div class="container container-projects">
+        <div class="timeline-block timeline-block-project">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Private Cloud</h3>
+            <span class="grey"><i class="fa-brands fa-github"></i> <a href="https://github.com/pranavj1001/private-cloud">Link to Project</a></span>
+            <p>
+              A complete solution to host your very own cloud at home.
+              Users can upload, download, delete multiple files and folders.
+              Backend Server uses Nodejs and Frontend uses React.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-project">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Cron Manager</h3>
+            <span class="grey"><i class="fa-brands fa-github"></i> <a href="https://github.com/pranavj1001/cron-manager">Link to Project</a></span>
+            <p>
+              A web app to host and maintain your very own cron manager.
+              Users can upload, download, delete multiple cron scripts.
+              The scripts will be executed as per the provided cron expression.
+              The state of the crons is still maintained after backend refresh.
+              Backend Server uses Nodejs and Frontend uses React.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-project">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Style Records</h3>
+            <span class="grey"><i class="fa-brands fa-github"></i> <a href="https://github.com/pranavj1001/StyleRecords">Link to Project</a></span>
+            <p>
+              An electron app that stores your notes in md format.
+              It uses mongodb for storing the data. 
+              It has a custom search engine which makes searching a lot easy. 
+              Apart from this, it also has the functionality to edit, delete, view and add new notes.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-block timeline-block-project">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Learn Languages</h3>
+            <span class="grey"><i class="fa-brands fa-github"></i> <a href="https://github.com/pranavj1001/LearnLanguages">Link to Project</a></span>
+            <p>
+              A repository that contains content and notes to learn new languages and technologies.
+            </p>
+          </div>
+        </div>
+        
+        <div class="timeline-block timeline-block-project">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Many More ...</h3>
+            <span class="grey"><i class="fa-brands fa-github"></i> <a href="https://github.com/pranavj1001">Head over here</a></span>
+            <p>
+              I have worked on many projects. Head over to my GitHub profile. I'm confident there should be something that might interest you. If not then please reach out to me ;)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="socials" class="dark">
+    <div class="section-title">
+      <h2>SOCIALS</h2>
+      <p>Let's Connect</p>
+    </div>
+    <div class="row">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="github" href="https://github.com/pranavj1001" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-github social-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="linkedin" href="https://www.linkedin.com/in/pranavj1001/" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-linkedin social-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="twitter" href="https://twitter.com/pranavj1000001" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-twitter social-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="strava" href="https://www.strava.com/athletes/89790093" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-strava social-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="steam" href="https://steamcommunity.com/id/geraltofpoland/" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-steam social-icon" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="dark">
+    <p>Developed with <span style="color: red;">&#10084;</span> by <a href="https://github.com/pranavj1001" target="_blank">Pranav Jain</a>.</p>
+  </footer>
+
+  <script src="./particles.min.js"></script>
+  <script id="rendered-js" src="./script.js"></script>
+
+</body>
+
 </html>
