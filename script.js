@@ -7,6 +7,6 @@ var typeInst = new TypeIt("#header h1 #title span", {
 	deleteSpeed: 75
 }).go();
 
-particlesJS.load('particles-js', './particles.json', function () {
+particlesJS.load('header', './particles.json', function () {
 	console.log('callback - particles.js config loaded');
 });
